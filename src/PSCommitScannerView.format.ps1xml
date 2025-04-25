@@ -1,0 +1,51 @@
+<!--
+Format type data generated 04/25/2025 14:47:34 by INT\christian.ritter
+
+This file was created using the New-PSFormatXML command that is part
+of the PSScriptTools module.
+
+https://github.com/jdhitsolutions/PSScriptTools
+-->
+<Configuration>
+  <ViewDefinitions>
+    <View>
+      <!--Created 04/25/2025 14:47:34 by INT\christian.ritter-->
+      <Name>PSCommitScannerView</Name>
+      <ViewSelectedBy>
+        <TypeName>PSCommitScannerObject</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <!--
+            By default the entries use property names, but you can replace them with scriptblocks.
+            <ScriptBlock>$_.foo /1mb -as [int]</ScriptBlock>
+-->
+              <ListItem>
+                <Label>Author</Label>
+                <ScriptBlock>$_.Author</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>Date</Label>
+                <ScriptBlock>$_.Date</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>Message</Label>
+                <ScriptBlock>$_.Message</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>Sha</Label>
+                <ScriptBlock>$_.Sha</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>Secrets</Label>
+                <ScriptBlock>$_.FileChanges.Secrets.PatternName</ScriptBlock>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+  </ViewDefinitions>
+</Configuration>
