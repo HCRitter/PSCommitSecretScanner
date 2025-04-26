@@ -72,7 +72,7 @@ A big thank you to the awesome community members who openly share their work and
 
 Special thanks to:
 
-- **@bjompen** for his awesome [PSSecretScanner](https://github.com/Bjopmpen/PSSecretScanner) - Module; It has great regex patterns and I stole a lot of them 😁.
+- **@bjompen** for his awesome [PSSecretScanner](https://github.com/Bjompen/PSSecretScanner) - Module; It has great regex patterns and I stole a lot of them 😁.
 - The broader PowerShell and security communities for their contributions, discussions, and creativity.
 
 Your open sharing of knowledge helps make the developer ecosystem better and safer for everyone! ❤️
