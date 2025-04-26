@@ -1,8 +1,8 @@
-# PSCommitScanner
+# PSCommitSecretScanner
 
 ![PSCommitSecretScanner Logo](PSCommitSecretScanner.png)
 
-**PSCommitScanner** is a PowerShell module designed to scan remote Git repositories for secrets within commit history or live files. It provides automated detection of sensitive information like API keys, tokens, passwords, and other credentials in GitHub-hosted repositories.
+**PSCommitSecretScanner** is a PowerShell module designed to scan remote Git repositories for secrets within commit history or live files. It provides automated detection of sensitive information like API keys, tokens, passwords, and other credentials in GitHub-hosted repositories.
 
 ## 🚀 Features
 
@@ -65,3 +65,14 @@ Before contributing, please:
 - Follow the existing coding style and best practices
 
 Let's make PSCommitScanner even better together!
+
+## 🙏 Acknowledgements
+
+A big thank you to the awesome community members who openly share their work and ideas — making tools like this possible!  
+
+Special thanks to:
+
+- **@bjompen** for his awesome [PSSecretScanner](https://github.com/Bjopmpen/PSSecretScanner) - Module; It has great regex patterns and I stole a lot of them 😁.
+- The broader PowerShell and security communities for their contributions, discussions, and creativity.
+
+Your open sharing of knowledge helps make the developer ecosystem better and safer for everyone! ❤️
