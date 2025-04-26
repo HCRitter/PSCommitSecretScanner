@@ -2,9 +2,9 @@ function Start-RemoteRepoScan {
     [CmdletBinding()]
     param (
         [string]$RepoUrl,
-        [string]$Branch = "main",
-        [string]$OutputPath = "C:\Temp\Scan-RemoteRepo",
-        [string]$OutputFile = "Scan-RemoteRepo.json",
+        #[string]$Branch = "main",
+        #[string]$OutputPath = "C:\Temp\Scan-RemoteRepo",
+        #[string]$OutputFile = "Scan-RemoteRepo.json",
         [ValidateSet("Github")]
         [string]$Provider = "Github",
         [ValidateSet("Commits","Live")]
@@ -22,6 +22,10 @@ function Start-RemoteRepoScan {
                 Write-Verbose "Filtering commits to last $CommitInDays days" 
                 $Commits = $Commits | Where-Object { $_.Date -ge (Get-Date).AddDays(-$CommitInDays) }
             }
+        }
+        if($ScanType -eq "Live"){
+            Write-Warning "Live scan is not implemented yet. Please use Commits scan."
+            return
         }
         $PatternConfig = Get-PatternConfig 
     }
